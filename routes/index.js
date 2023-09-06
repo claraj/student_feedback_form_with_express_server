@@ -12,6 +12,11 @@ router.post('/feedback', function(req, res, next) {
   const formData = req.body
   console.log(formData)
   // TODO save data somewhere, for example, in a database
+  res.redirect('/thankyou')
+})
+
+router.get('/thankyou', function(req, res, next) {
+  res.render('thankyou')
 })
 
 
